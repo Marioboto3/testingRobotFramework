@@ -11,12 +11,23 @@ Open home page
     ----- (Step) -----  stepNumber=1
     Exec  Open Page  Ebay
 
-Search Electronics
+Section
     [Documentation]  Keyword that search electronics
+    [Arguments]  ${section}
+
     ----- (Step) -----    $stepNumber=1
     Exec  Open Page  Ebay
     ----- (Step) -----    $stepNumber=2
-    Exec    Press button    Electronics
+    Exec    Press button    ${section}
+
+Search
+    [Documentation]  Keyword that search in the search bar
+    [Arguments]  ${text}
+
+    ----- (Step) -----    $stepNumber=1
+    Exec  Open Page  Ebay
+    ----- (Step) -----    $stepNumber=2
+    Exec  Search bar  ${text}
 
 *** Test Cases ***
 
@@ -29,4 +40,6 @@ Testing home Page
     Set Test Variable    ${page}  Ebay
 
     Open home page
-    Search Electronics
+    Section  Electronics
+    Section  Motors
+    Search  Pilota

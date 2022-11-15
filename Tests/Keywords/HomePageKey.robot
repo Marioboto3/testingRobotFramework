@@ -15,3 +15,9 @@ Press button
     [Arguments]  ${button}
     
     Run Keyword If  "${button}"== "Electronics"  Press Keys    //*[@id="mainContent"]/div[1]/ul/li[4]/a  return
+    Run Keyword If  "${button}"== "Motors"  Press Keys    //*[@id="mainContent"]/div[1]/ul/li[3]/a  return
+    
+Search bar
+    [Arguments]  ${text}
+    
+    Input Text    //*[@id="gh-ac"]    ${text}
