@@ -11,6 +11,13 @@ Open home page
     ----- (Step) -----  stepNumber=1
     Exec  Open Page  Ebay
 
+Search Electronics
+    [Documentation]  Keyword that search electronics
+    ----- (Step) -----    $stepNumber=1
+    Exec  Open Page  Ebay
+    ----- (Step) -----    $stepNumber=2
+    Exec    Press button    Electronics
+
 *** Test Cases ***
 
 Testing home Page
@@ -22,3 +29,4 @@ Testing home Page
     Set Test Variable    ${page}  Ebay
 
     Open home page
+    Search Electronics

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221115 16:54:58.035" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221115 17:39:32.744" rpa="false" schemaversion="3">
 <suite id="s1" name="Home Page" source="C:\Users\msboto\PycharmProjects\Testing\Tests\Ebay\Home_Page.robot">
-<test id="s1-t1" name="Testing home Page" line="16">
+<test id="s1-t1" name="Testing home Page" line="23">
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${page}</arg>
 <arg>Ebay</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20221115 16:54:58.449" level="INFO">${page} = Ebay</msg>
-<status status="PASS" starttime="20221115 16:54:58.449" endtime="20221115 16:54:58.449"/>
+<msg timestamp="20221115 17:39:33.162" level="INFO">${page} = Ebay</msg>
+<status status="PASS" starttime="20221115 17:39:33.161" endtime="20221115 17:39:33.162"/>
 </kw>
 <kw name="Open home page">
 <doc>Keyword that opens the home page</doc>
@@ -17,10 +17,10 @@
 <arg>console=true</arg>
 <arg>message= STEP: ${stepNumber}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221115 16:54:58.450" level="INFO"> STEP: 1</msg>
-<status status="PASS" starttime="20221115 16:54:58.450" endtime="20221115 16:54:58.451"/>
+<msg timestamp="20221115 17:39:33.164" level="INFO"> STEP: 1</msg>
+<status status="PASS" starttime="20221115 17:39:33.163" endtime="20221115 17:39:33.164"/>
 </kw>
-<status status="PASS" starttime="20221115 16:54:58.450" endtime="20221115 16:54:58.451"/>
+<status status="PASS" starttime="20221115 17:39:33.163" endtime="20221115 17:39:33.164"/>
 </kw>
 <kw name="Exec" library="CommonKeywords">
 <arg>Open Page</arg>
@@ -35,8 +35,8 @@
 <var>${page}</var>
 <arg>${page}</arg>
 <doc>Converts string to lower case.</doc>
-<msg timestamp="20221115 16:54:58.454" level="INFO">${page} = ebay</msg>
-<status status="PASS" starttime="20221115 16:54:58.454" endtime="20221115 16:54:58.454"/>
+<msg timestamp="20221115 17:39:33.168" level="INFO">${page} = ebay</msg>
+<status status="PASS" starttime="20221115 17:39:33.168" endtime="20221115 17:39:33.168"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>"${page}"== "ebay"</arg>
@@ -48,27 +48,123 @@
 <arg>https://www.ebay.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221115 16:54:58.455" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
-<status status="PASS" starttime="20221115 16:54:58.454" endtime="20221115 16:55:01.971"/>
+<msg timestamp="20221115 17:39:33.169" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
+<status status="PASS" starttime="20221115 17:39:33.168" endtime="20221115 17:39:36.649"/>
 </kw>
-<status status="PASS" starttime="20221115 16:54:58.454" endtime="20221115 16:55:01.971"/>
+<status status="PASS" starttime="20221115 17:39:33.168" endtime="20221115 17:39:36.649"/>
 </kw>
-<status status="PASS" starttime="20221115 16:54:58.454" endtime="20221115 16:55:01.971"/>
+<status status="PASS" starttime="20221115 17:39:33.167" endtime="20221115 17:39:36.649"/>
 </kw>
-<msg timestamp="20221115 16:55:01.971" level="INFO">Returning from the enclosing user keyword.</msg>
-<status status="PASS" starttime="20221115 16:54:58.451" endtime="20221115 16:55:01.971"/>
+<msg timestamp="20221115 17:39:36.649" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20221115 17:39:33.164" endtime="20221115 17:39:36.649"/>
 </kw>
-<status status="PASS" starttime="20221115 16:54:58.451" endtime="20221115 16:55:01.972"/>
+<status status="PASS" starttime="20221115 17:39:33.164" endtime="20221115 17:39:36.649"/>
 </kw>
-<status status="PASS" starttime="20221115 16:54:58.450" endtime="20221115 16:55:01.972"/>
+<status status="PASS" starttime="20221115 17:39:33.163" endtime="20221115 17:39:36.649"/>
+</kw>
+<kw name="Search Electronics">
+<doc>Keyword that search electronics</doc>
+<kw name="----- (Step) -----" library="CommonKeywords">
+<arg>$stepNumber=1</arg>
+<kw name="Log" library="BuiltIn">
+<arg>console=true</arg>
+<arg>message= STEP: ${stepNumber}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221115 17:39:36.650" level="INFO"> STEP: $stepNumber=1</msg>
+<status status="PASS" starttime="20221115 17:39:36.650" endtime="20221115 17:39:36.651"/>
+</kw>
+<status status="PASS" starttime="20221115 17:39:36.650" endtime="20221115 17:39:36.651"/>
+</kw>
+<kw name="Exec" library="CommonKeywords">
+<arg>Open Page</arg>
+<arg>Ebay</arg>
+<kw name="Run Keyword And Return" library="BuiltIn">
+<arg>${keywordToExecute}</arg>
+<arg>@{args}</arg>
+<doc>Runs the specified keyword and returns from the enclosing user keyword.</doc>
+<kw name="Open page" library="HomePageKey">
+<arg>@{args}</arg>
+<kw name="Convert To Lower Case" library="String">
+<var>${page}</var>
+<arg>${page}</arg>
+<doc>Converts string to lower case.</doc>
+<msg timestamp="20221115 17:39:36.654" level="INFO">${page} = ebay</msg>
+<status status="PASS" starttime="20221115 17:39:36.654" endtime="20221115 17:39:36.654"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>"${page}"== "ebay"</arg>
+<arg>Open Browser</arg>
+<arg>https://www.ebay.com/</arg>
+<arg>chrome</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.ebay.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221115 17:39:36.655" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
+<status status="PASS" starttime="20221115 17:39:36.655" endtime="20221115 17:39:40.486"/>
+</kw>
+<status status="PASS" starttime="20221115 17:39:36.654" endtime="20221115 17:39:40.486"/>
+</kw>
+<status status="PASS" starttime="20221115 17:39:36.654" endtime="20221115 17:39:40.486"/>
+</kw>
+<msg timestamp="20221115 17:39:40.487" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20221115 17:39:36.651" endtime="20221115 17:39:40.487"/>
+</kw>
+<status status="PASS" starttime="20221115 17:39:36.651" endtime="20221115 17:39:40.487"/>
+</kw>
+<kw name="----- (Step) -----" library="CommonKeywords">
+<arg>$stepNumber=2</arg>
+<kw name="Log" library="BuiltIn">
+<arg>console=true</arg>
+<arg>message= STEP: ${stepNumber}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221115 17:39:40.487" level="INFO"> STEP: $stepNumber=2</msg>
+<status status="PASS" starttime="20221115 17:39:40.487" endtime="20221115 17:39:40.488"/>
+</kw>
+<status status="PASS" starttime="20221115 17:39:40.487" endtime="20221115 17:39:40.488"/>
+</kw>
+<kw name="Exec" library="CommonKeywords">
+<arg>Press button</arg>
+<arg>Electronics</arg>
+<kw name="Run Keyword And Return" library="BuiltIn">
+<arg>${keywordToExecute}</arg>
+<arg>@{args}</arg>
+<doc>Runs the specified keyword and returns from the enclosing user keyword.</doc>
+<kw name="Press button" library="HomePageKey">
+<arg>@{args}</arg>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>"${button}"== "Electronics"</arg>
+<arg>Press Keys</arg>
+<arg>//*[@id="mainContent"]/div[1]/ul/li[4]/a</arg>
+<arg>return</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="mainContent"]/div[1]/ul/li[4]/a</arg>
+<arg>return</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221115 17:39:40.493" level="INFO">Sending key(s) ('return',) to //*[@id="mainContent"]/div[1]/ul/li[4]/a element.</msg>
+<msg timestamp="20221115 17:39:43.225" level="INFO">Sending keys return</msg>
+<status status="PASS" starttime="20221115 17:39:40.492" endtime="20221115 17:39:43.286"/>
+</kw>
+<status status="PASS" starttime="20221115 17:39:40.492" endtime="20221115 17:39:43.286"/>
+</kw>
+<status status="PASS" starttime="20221115 17:39:40.492" endtime="20221115 17:39:43.287"/>
+</kw>
+<msg timestamp="20221115 17:39:43.287" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20221115 17:39:40.488" endtime="20221115 17:39:43.287"/>
+</kw>
+<status status="PASS" starttime="20221115 17:39:40.488" endtime="20221115 17:39:43.287"/>
+</kw>
+<status status="PASS" starttime="20221115 17:39:36.650" endtime="20221115 17:39:43.287"/>
 </kw>
 <doc>Test that verificates the correct performance of Ebay's principal page.
 First, we accept the cookies.
 After, we will see differents functionalities.</doc>
 <tag>Home Page</tag>
-<status status="PASS" starttime="20221115 16:54:58.448" endtime="20221115 16:55:01.972"/>
+<status status="PASS" starttime="20221115 17:39:33.160" endtime="20221115 17:39:43.288"/>
 </test>
-<status status="PASS" starttime="20221115 16:54:58.042" endtime="20221115 16:55:01.973"/>
+<status status="PASS" starttime="20221115 17:39:32.750" endtime="20221115 17:39:43.291"/>
 </suite>
 <statistics>
 <total>
